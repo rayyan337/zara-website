@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZaraRizwan Design - Interior Design Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Zara Rizwan Design</a>
+
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <section id="hero">
+        <div class="container">
+            <h1>A Modern Design Perspective<br>by Zara Rizwan</h1>
+            <img src="images/hero-background.jpg" alt="Zara Rizwan Profile Picture" class="profile-img">
+
+
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+
+            <img src="images/zara-rizwan-profile.jpg" alt="Zara Rizwan Profile Picture" class="profile-img">
+
+
+
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="img/project-residential-1.jpg" alt="Residential Project 1">
+                    <h3>Modern Apartment Renovation</h3>
+                    <p>A minimalist design focusing on natural light and open spaces.</p>
+                    <a href="#" class="btn-small">View Details</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/project-commercial-1.jpg" alt="Commercial Project 1">
+                    <h3>Co-working Office Space</h3>
+                    <p>Creating a vibrant and productive environment for collaboration.</p>
+                    <a href="#" class="btn-small">View Details</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/project-retail-1.jpg" alt="Retail Project 1">
+                    <h3>Boutique Store Design</h3>
+                    <p>An inviting and functional retail space that enhances brand identity.</p>
+                    <a href="#" class="btn-small">View Details</a>
+                </div>
+                </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Let's Create Something Beautiful Together</h2>
+            <p>Ready to transform your space? Get in touch for a consultation.</p>
+            <form action="https://formspree.io/f/your_form_id" method="POST"> <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="mailto:rizwanzara@gmail.com">info@zararizwandesign.com</a>
+                <a href="tel:+971507395633">+971507395633</a> </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Zararizwan Design. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://instagram.com/zararizwandesign" target="_blank">Instagram</a>
+                <a href="https://linkedin.com/in/zararizwan" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});"></script>
+
+</body>
+</html>
