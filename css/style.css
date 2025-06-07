@@ -164,8 +164,8 @@ header nav ul li a:hover {
 
 /* About Section Styling: Zara's profile and skills */
 #about .profile-img {
-    width: 1200px;
-    height: 710px;
+    width: 950px;
+    height: 650px;
     border-radius: 0%; /* Makes the image perfectly round */
     object-fit: cover; /* Crops image to fit the circle without distortion */
     margin-bottom: 40px;
