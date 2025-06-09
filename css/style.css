@@ -485,9 +485,10 @@ footer p {
 }
 
 .detail-gallery img {
-    width: 100%;
-    height: 300px; /* Fixed height for consistency */
-    object-fit: cover; /* Ensures images cover the area without distortion */
+    width: 100%; /* Ensures image takes full width of its grid column */
+    height: auto; /* IMPORTANT: Allows image to maintain its original aspect ratio */
+    object-fit: contain; /* Ensures the entire image is visible, no cropping, may leave empty space */
+    display: block; /* Removes any extra space below the image */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
