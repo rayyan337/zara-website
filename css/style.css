@@ -512,7 +512,7 @@ footer p {
 }
 
 .detail-gallery img {
-    width: 100%; /* Ensures image takes full width of its grid column */
+    width: 900%; /* Ensures image takes full width of its grid column */
     height: auto; /* IMPORTANT: Allows image to maintain its original aspect ratio */
     object-fit: contain; /* Ensures the entire image is visible, no cropping, may leave empty space */
     display: block; /* Removes any extra space below the image */
