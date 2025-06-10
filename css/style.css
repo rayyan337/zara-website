@@ -1,4 +1,6 @@
 /* Basic Reset: Make sure all browsers start from a clean slate */
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0; /* Remove default spacing around elements */
     padding: 0; /* Remove default padding inside elements */
@@ -7,7 +9,7 @@
 
 /* Global Body Styles: Sets basic look for the entire page */
 body {
-    font-family: 'Montserrat', sans-serif; /* Use the Google Font we linked */
+    font-family: 'Alumni Sans', sans-serif; /* Use the Google Font we linked */
     line-height: 1.6; /* Spacing between lines of text */
     color: #333; /* Dark gray for text, easy to read */
     background-color: #f9f9f9; /* Very light gray background for the page */
