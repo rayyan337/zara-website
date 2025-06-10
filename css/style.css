@@ -496,6 +496,7 @@ footer p {
     margin: 0 auto 40px;
 }
 
+
 .detail-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -538,3 +539,37 @@ footer p {
 .project-detail-page .btn:hover {
     background-color: #8C9F9F;
 }
+
+/* css/style.css */
+
+/* ... (your existing CSS before this point, including the main .detail-gallery rule) ... */
+
+/* --- Add this new section at the bottom of your style.css file --- */
+
+@media (max-width: 576px) { /* This media query targets screens up to 576 pixels wide (common phone breakpoint) */
+    .detail-gallery {
+        /* Force a single column for very small screens */
+        grid-template-columns: 1fr;
+        /* Adjust the gap for smaller screens if desired */
+        gap: 15px;
+        /* Add some horizontal padding to prevent images from touching the screen edges */
+        padding: 0 15px; /* Top/bottom padding 0, left/right padding 15px */
+    }
+
+    /* You might also want to adjust padding for the main container on project detail pages */
+    .project-detail-page .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Optional: For tablets or slightly larger phones (between 577px and 768px) */
+/* If you want two columns on some phones but not very small ones, you can add another media query */
+/*
+@media (min-width: 577px) and (max-width: 768px) {
+    .detail-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+}
+*/
