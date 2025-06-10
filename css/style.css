@@ -155,7 +155,7 @@ header nav ul li a:hover {
 
 
 #hero img {
-    max-width: 300px; /* Adjust the maximum width of the logo */
+    max-width: 900px; /* Adjust the maximum width of the logo */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 20px; /* Add space below the logo */
     display: block; /* Prevent inline spacing issues */
