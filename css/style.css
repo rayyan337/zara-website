@@ -137,11 +137,28 @@ header nav ul li a:hover {
 #hero {
     /* Overlay a white gradient then add a background image */
     background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('../img/hero-background.jpg') no-repeat center center/cover;
-    min-height: 350px; /* Minimum height for impact */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
     display: flex;
-    align-items: center; /* Centers content vertically */
-    justify-content: center; /* Centers content horizontally */
-    text-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Subtle text shadow */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    padding: 20px;
+
+
+}
+
+
+#hero img {
+    max-width: 300px; /* Adjust the maximum width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space below the logo */
+    display: block; /* Prevent inline spacing issues */
 }
 
 #hero .container {
