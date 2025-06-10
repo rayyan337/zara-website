@@ -162,7 +162,7 @@ header nav ul li a:hover {
 
 
 #hero img {
-    max-width: 200px; /* Adjust the maximum width of the logo */
+    max-width: 500px; /* Adjust the maximum width of the logo */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 20px; /* Add space below the logo */
     display: block; /* Prevent inline spacing issues */
@@ -553,30 +553,40 @@ footer p {
 
 /* --- Add this new section at the bottom of your style.css file --- */
 
-@media (max-width: 576px) { /* This media query targets screens up to 576 pixels wide (common phone breakpoint) */
+
+
+
+
+/* --- Media Queries for Responsive Image Galleries --- */
+
+/* For screens smaller than 768px (most tablets and all phones) */
+@media (max-width: 768px) {
     .detail-gallery {
-        /* Force a single column for very small screens */
-        grid-template-columns: 1fr;
-        /* Adjust the gap for smaller screens if desired */
-        gap: 15px;
-        /* Add some horizontal padding to prevent images from touching the screen edges */
-        padding: 0 15px; /* Top/bottom padding 0, left/right padding 15px */
+        /* Adjust minmax to allow for two columns on tablets/larger phones, or make them fit better */
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Allow smaller min-width for items */
+        gap: 15px; /* Slightly reduce gap for tighter fit */
+        padding: 0 15px; /* Add horizontal padding to the gallery itself */
     }
 
-    /* You might also want to adjust padding for the main container on project detail pages */
+    /* Also adjust padding for the main content container on project pages */
     .project-detail-page .container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
-/* Optional: For tablets or slightly larger phones (between 577px and 768px) */
-/* If you want two columns on some phones but not very small ones, you can add another media query */
-/*
-@media (min-width: 577px) and (max-width: 768px) {
+/* For screens smaller than 576px (most standard phones) */
+@media (max-width: 576px) {
     .detail-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 15px;
+        /* Force a single column for very narrow phone screens */
+        grid-template-columns: 1fr;
+        gap: 10px; /* Even smaller gap for single column on phones */
+        padding: 0 10px; /* Adjust padding for very small screens */
+    }
+
+    /* Ensure container padding is adjusted for very small screens too */
+    .project-detail-page .container {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
-*/
