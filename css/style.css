@@ -408,6 +408,7 @@ footer p {
     #about .profile-img {
         width: 200px;
         height: 200px;
+        margin: 0 auto 30px auto;
     }
 
     #about p {
