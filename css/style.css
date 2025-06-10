@@ -7,6 +7,13 @@
     box-sizing: border-box; /* A super important rule for easy layout! */
 }
 
+/* General responsive image rule - ensure this is present */
+img {
+    max-width: 100%; /* Important: Images never overflow their parent */
+    height: auto;    /* Important: Preserves aspect ratio */
+    display: block;  /* Helps with layout and removes extra space below images */
+}
+
 /* Global Body Styles: Sets basic look for the entire page */
 body {
     font-family: 'Alumni Sans', sans-serif; /* Use the Google Font we linked */
