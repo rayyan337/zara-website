@@ -162,10 +162,12 @@ header nav ul li a:hover {
 
 
 #hero img {
-    max-width: 600px; /* Adjust the maximum width of the logo */
-    height: 300px; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Add space below the logo */
-    display: block; /* Prevent inline spacing issues */
+    max-width: 500px; /* CHANGED: This makes the logo larger on laptops */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 20px; /* Space below the logo */
+    display: block; /* Ensures it behaves as a block element for centering */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
 }
 
 #hero .container {
