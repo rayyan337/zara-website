@@ -195,7 +195,7 @@ header nav ul li a:hover {
     max-width: 800px; /* CHANGED: Set a reasonable max-width for desktops */
     height: auto;    /* CHANGED: Maintain aspect ratio */
     margin: 0 auto 40px auto; /* ADDED: Centers the image horizontally, keeps bottom margin */
-    border-radius: 0%; /* If you want it square, otherwise change to 50% for round */
+    border-radius: 50%; /* If you want it square, otherwise change to 50% for round */
     object-fit: cover;
     border: 8px solid #f2f2f2;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
